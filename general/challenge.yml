@@ -1,13 +1,13 @@
 name: "Why so serious?"
-author: "sikk"
-category: Forensics
+author: "ewunng"
+category: Steganography
 description: png 파일에 숨어있는 플래그를 찾아라.
 
-value: 100
+value: 500
 type: standard
 
 flags:
-    - HACK{hello_world}
+    - HACK{H@ppy_D@y}
 
 tags:
     - png stego

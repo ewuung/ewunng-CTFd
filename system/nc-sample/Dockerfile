@@ -2,6 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /challenge
 
+#nc는 socat 설치 필요!
 RUN apt-get update \
     && apt-get -y --no-install-recommends install socat \ 
     && rm -rf /var/lib/apt/lists/*
@@ -16,5 +17,5 @@ RUN groupadd challenge \
     && chmod -R 755 /challenge/ \
     && mv flag flag_$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 32)
 
-EXPOSE 7001
+EXPOSE 7101
 ENTRYPOINT ["./start.sh"]

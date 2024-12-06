@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  sikk-nc-sample:
-    build: .
-    restart: always
-    image: "sikk-nc-sample"
-    ports: 
-      - "7001:7001"

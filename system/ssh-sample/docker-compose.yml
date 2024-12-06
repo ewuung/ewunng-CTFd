@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  sikk-ssh-sample:
+    build: .
+    image: "ewunng-ssh-sample"
+    restart: always
+    ports: 
+      - "7103:22"  # 외부 포트 지정 가능(외부포트:내부포트(22))

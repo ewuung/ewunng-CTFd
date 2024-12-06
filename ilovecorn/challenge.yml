@@ -1,0 +1,29 @@
+name: "I Love Corn"
+author: "ewunng"
+category: Web
+description: |
+    제가 "옥수수"를 좋아한다는 것은 "사실"일까요?
+
+    (Flag Location: flag.txt)
+
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 7
+    minimum: 50
+
+connection_info: http://31.220.82.212:7102
+
+flags:
+    - HACK{I_R3ALLY_R3ALLY_L0V3_C0RN!}
+
+tags:
+    - web
+
+files:
+    - dist/app.py
+
+state: visible
+
+version: "0.1"

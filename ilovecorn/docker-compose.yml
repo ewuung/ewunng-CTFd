@@ -1,0 +1,9 @@
+services:
+  ewunng-ilovecorn:
+    build: .
+    restart: always
+    image: "ewunng-ilovecorn"
+    ports: 
+      - "7102:7102"
+    networks:
+      - default
