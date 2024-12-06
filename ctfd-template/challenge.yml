@@ -1,0 +1,73 @@
+# 1. 문제 정보
+name: "{{cookiecutter.name}}"
+author: "author"
+category: category
+description: This is a sample description
+
+# 2. 문제 점수
+# 2-1. 정적 문제 점수
+value: 100
+type: standard
+
+# 2-2. 동적 문제 점수
+# value: 0
+# type: dynamic
+# extra:
+#     initial: 500
+#     decay: 5
+#     minimum: 50
+
+# 3. 연결 정보
+connection_info: nc hostname 12345
+connection_info: ssh user@hostname -p 12345 (password: password)
+
+# 4. 플래그
+flags:
+    # A static case sensitive flag
+    - flag{3xampl3}
+    # A static case sensitive flag created with a dictionary
+    - {
+        type: "static",
+        content: "flag{wat}",
+    }
+    # A static case insensitive flag
+    - {
+        type: "static",
+        content: "flag{wat}",
+        data: "case_insensitive",
+    }
+    # A regex case insensitive flag
+    - {
+        type: "regex",
+        content: "(.*)STUFF(.*)",
+        data: "case_insensitive",
+    }
+
+
+# 5. 태그
+tags:
+    - web
+    - sandbox
+    - js
+
+# 6. 파일
+files:
+    - dist/source.py
+
+# 7. 힌트
+hints:
+    - {
+        content: "This hint costs points",
+        cost: 10
+    }
+    - This hint is free
+
+# 8. 선행 문제
+requirements:
+    - "Warmup"
+    - "Are you alive"
+
+# 9. 문제 공개 여부
+state: hidden
+
+version: "0.1"

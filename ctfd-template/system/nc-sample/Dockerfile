@@ -16,7 +16,5 @@ RUN groupadd challenge \
     && chmod -R 755 /challenge/ \
     && mv flag flag_$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 32)
 
-# ENV LISTEN_PORT 5103
-
-EXPOSE 5103
+EXPOSE 7001
 ENTRYPOINT ["./start.sh"]
