@@ -6,19 +6,19 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install socat \ 
     && rm -rf /var/lib/apt/lists/*
 
-COPY src/requirements.txt .
-COPY src/ilovecorn.py .
-COPY src/app.py .
-COPY src/flag .
-COPY src/static/corn.jpg .
-COPY src/templates/console.html .
+COPY src/ilovecorn.py ./src/
+COPY src/app.py ./src/
+COPY src/flag ./src/
+COPY src/static/corn.jpg ./src/static/
+COPY src/templates/console.html ./src/templates/
+COPY src/requirements.txt ./src/
 
 RUN groupadd ilovecorn \
     && useradd --no-create-home -d /ilovecorn -g ilovecorn ilovecorn \
     && chown -R ilovecorn:ilovecorn /ilovecorn/ \
     && chmod -R 755 /ilovecorn/ \
-    && mv flag flag_$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 32) \
-    && pip install --no-cache-dir -r requirements.txt
+    && pip install --no-cache-dir -r ./src/requirements.txt
 
 EXPOSE 7102
-ENTRYPOINT ["python", "./ilovecorn.py"]
+CMD ["src/ilovecorn.py"]
+ENTRYPOINT ["python3"]

@@ -1,0 +1,9 @@
+services:
+  ewunng-blackandwhite:
+    build: .
+    restart: always
+    image: "ewunng-blackandwhite"
+    ports: 
+      - "7104:7104"
+    networks:
+      - default

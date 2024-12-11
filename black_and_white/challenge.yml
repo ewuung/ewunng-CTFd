@@ -1,0 +1,26 @@
+name: "Black and White"
+author: "ewunng"
+category: Web
+description: Are you Black Hat or White Hat?
+
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 7
+    minimum: 50
+
+connection_info: http://31.220.82.212:7104
+
+flags:
+    - HACK{Y0U_AR3_TH3_GR3AT_WH1T3_H@T_H@CK3R}
+
+tags:
+    - web
+
+files:
+    - dist/app.py
+
+state: visible
+
+version: "0.1"
