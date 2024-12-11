@@ -6,4 +6,5 @@ access_token = ctfd_638429c4fb554b105cd8a66b579fa1d2b218b8e50eb12ffa8c91d2aebff0
 general = general
 system/nc-sample = system/nc-sample
 system/ssh-sample = system/ssh-sample
+black_and_white = black_and_white
 
