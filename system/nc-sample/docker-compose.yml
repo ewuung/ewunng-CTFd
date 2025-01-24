@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  ewunng-nc-sample: # 컨테이너 이름
-    build: . # 현재 위치한 경로에 있는 docker를 가져와서 이미지화 하겠다는 의미.
-    restart: always # docker 자체가 꺼지고 다시 켜지더라도 background에서 돌아가도록 하는 명령어.
-    image: "ewunng-nc-sample" # 이미지 이름
-    ports: 
-      - "7101:7101"
