@@ -53,4 +53,4 @@ def whitehat():
     return render_template("whitehat.html", flag=flag_result_2)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=7104)
+    app.run(host="0.0.0.0", port=7102)

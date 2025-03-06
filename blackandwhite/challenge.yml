@@ -10,7 +10,7 @@ extra:
     decay: 7
     minimum: 50
 
-connection_info: http://31.220.82.212:7104
+connection_info: http://31.220.82.212:7102
 
 flags:
     - HACK{Y0U_AR3_TH3_GR3AT_WH1T3_H@T_H@CK3R}

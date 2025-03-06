@@ -19,6 +19,6 @@ RUN groupadd ilovecorn \
     && chmod -R 755 /ilovecorn/ \
     && pip install --no-cache-dir -r ./src/requirements.txt
 
-EXPOSE 7102
+EXPOSE 7101
 CMD ["src/ilovecorn.py"]
 ENTRYPOINT ["python3"]

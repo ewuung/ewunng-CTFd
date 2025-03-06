@@ -1,9 +1,9 @@
 services:
-  ewunng-ilovecorn:
+  ewunng-whiteday:
     build: .
     restart: always
-    image: "ewunng-ilovecorn"
+    image: "ewunng-whiteday"
     ports: 
-      - "7101:7101"
+      - "7104:7104"
     networks:
       - default

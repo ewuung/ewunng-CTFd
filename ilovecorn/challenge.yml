@@ -13,7 +13,7 @@ extra:
     decay: 7
     minimum: 50
 
-connection_info: http://31.220.82.212:7102
+connection_info: http://31.220.82.212:7101
 
 flags:
     - HACK{I_R3ALLY_R3ALLY_L0V3_C0RN!}

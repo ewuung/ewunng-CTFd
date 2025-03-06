@@ -22,6 +22,6 @@ RUN groupadd blackandwhite \
     && chmod -R 755 /blackandwhite/ \
     && pip install --no-cache-dir -r ./src/requirements.txt
 
-EXPOSE 7104
+EXPOSE 7102
 CMD ["src/app.py"]
 ENTRYPOINT ["python"]

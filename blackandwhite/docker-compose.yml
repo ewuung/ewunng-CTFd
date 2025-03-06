@@ -4,6 +4,6 @@ services:
     restart: always
     image: "ewunng-blackandwhite"
     ports: 
-      - "7104:7104"
+      - "7102:7102"
     networks:
       - default

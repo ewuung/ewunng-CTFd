@@ -1,0 +1,25 @@
+name: "Whiteday-1"
+author: "ewunng"
+category: Web
+description: |
+    화이트데이를 맞아 사탕 가게에서 사탕을 나눠준다고 합니다.
+    이 기회를 놓칠 수 없죠. 얼른 달려갑시다!
+
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 7
+    minimum: 50
+
+connection_info: http://31.220.82.212:7104
+
+flags:
+    - HACK{I_sm311_0f_str@wb3rri3s}
+
+tags:
+    - web
+
+state: visible
+
+version: "0.1"
