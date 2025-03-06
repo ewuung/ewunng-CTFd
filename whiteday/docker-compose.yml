@@ -4,6 +4,6 @@ services:
     restart: always
     image: "ewunng-whiteday"
     ports: 
-      - "7104:7104"
+      - "7104:80"
     networks:
       - default
